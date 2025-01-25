@@ -1,0 +1,27 @@
+<div class="container">
+
+  <h1 class="login-form-title">Control your groceries spending </h1>
+  <form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <mat-label>Enter your email</mat-label>
+      <input
+        matInput
+        placeholder="pat@example.com"
+        formControlName="email"
+        (blur)="updateErrorMessage()"
+        required
+      />
+      <mat-error *ngIf="emailForm.get('email')?.invalid && emailForm.get('email')?.touched">
+        {{getErrorMessage()}}
+      </mat-error>
+    </mat-form-field>
+    <button
+      class="button-submit"
+      mat-stroked-button
+      type="submit"
+      [disabled]="emailForm.invalid"
+    >
+      Continue with email
+    </button>
+  </form>
+</div>
