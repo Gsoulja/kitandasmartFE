@@ -8,7 +8,7 @@ import {BehaviorSubject, Observable} from 'rxjs';
 export class AuthServiceService {
   private authTokenSubject = new BehaviorSubject<string | null>(null);
   private readonly AUTH_TOKEN_KEY = 'authToken';
-  private apiUrl = "http://backendapp.kitandasmart.com"; // Base URL from environment config
+  private apiUrl = "https://backendapp.kitandasmart.com"; // Base URL from environment config
 
   constructor(private http: HttpClient) { }
 

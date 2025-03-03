@@ -7,7 +7,7 @@ import {Observable} from 'rxjs';
 })
 export class ImageUploadService {
 
-  private uploadUrl = 'http://backendapp.kitandasmart.com/api/upload'; // Spring Boot API URL
+  private uploadUrl = 'https://backendapp.kitandasmart.com/api/upload'; // Spring Boot API URL
 
   constructor(private http: HttpClient) {}
 
