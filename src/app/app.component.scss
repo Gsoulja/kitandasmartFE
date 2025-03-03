@@ -1,0 +1,56 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-menu-button {
+  display: block;
+}
+
+.desktop-nav a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.desktop-nav {
+  display: none; /* Hide on small screens */
+}
+
+.app-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .mobile-menu-button {
+    display: block; /* Ensure the mobile button shows up */
+  }
+
+  .desktop-nav {
+    display: none; /* Hide desktop menu items on small screens */
+  }
+
+  .mat-sidenav-content {
+    padding-top: 56px; /* Avoid overlapping with toolbar on mobile */
+  }
+}
+
+/* Desktop View */
+@media (min-width: 769px) {
+  .mobile-menu-button {
+    display: none; /* Hide mobile button on large screens */
+  }
+
+  .desktop-nav {
+    display: flex; /* Show desktop menu items */
+  }
+
+  .app-title {
+    text-align: left;
+    flex-grow: 0;
+  }
+}

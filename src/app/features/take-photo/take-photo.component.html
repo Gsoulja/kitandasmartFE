@@ -1,0 +1,14 @@
+<mat-card class="photo-card">
+  <mat-card-header>
+    <mat-card-title>Take Photo</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="video-container">
+      <video #videoElement autoplay playsinline></video>
+    </div>
+    <button mat-raised-button color="primary" (click)="takePhoto()" class="take-photo-btn">
+      Take Photo
+    </button>
+    <canvas #canvasElement class="hidden-canvas"></canvas>
+  </mat-card-content>
+</mat-card>

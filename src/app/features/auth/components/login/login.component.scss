@@ -1,0 +1,75 @@
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center; /* Center title by default */
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-field {
+  width: 100%;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.confirmation-message {
+  text-align: center;
+  font-size: 14px;
+  color: #4caf50;
+  margin-top: 16px;
+}
+
+@media (max-width: 600px) {
+  .login-card {
+    padding: 12px;
+  }
+
+  .login-title {
+    font-size: 20px;
+    margin-top: 20px; /* Extra margin for better spacing on mobile */
+    text-align: center; /* Ensure title stays centered */
+    color: #00796b; /* Subtle color change for focus on mobile */
+    text-transform: uppercase; /* Add a little emphasis */
+  }
+
+  .input-field {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .confirmation-message {
+    font-size: 12px;
+  }
+}

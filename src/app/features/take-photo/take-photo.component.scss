@@ -1,0 +1,44 @@
+.photo-card {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.video-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.take-photo-btn {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.hidden-canvas {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .photo-card {
+    padding: 8px;
+  }
+
+  .take-photo-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+

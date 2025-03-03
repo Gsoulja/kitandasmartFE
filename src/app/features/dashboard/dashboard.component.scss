@@ -1,0 +1,66 @@
+/* Dashboard styling */
+.dashboard-title {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+/* Stat cards styling */
+.stat-card {
+  border-radius: 4px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.stat-card:active {
+  transform: scale(0.98);
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* Color coding for different stat cards */
+.today-card {
+  border-left: 4px solid #4caf50;
+}
+
+.week-card {
+  border-left: 4px solid #ff9800;
+}
+
+.month-card {
+  border-left: 4px solid #f44336;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 599px) {
+  .dashboard-title {
+    font-size: 1.25rem;
+  }
+
+  .stat-value {
+    font-size: 1.25rem;
+  }
+  .dashboard-container {
+    padding: 8px !important;
+  }
+
+  .stat-card {
+    min-width: 100%;
+    margin: 4px 0;
+  }
+
+  ngx-charts-pie-chart, ngx-charts-advanced-pie-chart {
+    transform: scale(0.9);
+    margin-left: -15
+  }
+}
+
+
